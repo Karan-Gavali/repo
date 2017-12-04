@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 
+/// Custom Weather Error
+///
+/// - unsupportedUrl: throws if url is invalid
+/// - invalidHtml: throws if html is invalid
 enum WeatherError {
     enum Request:Error {
         case unsupportedUrl
@@ -20,15 +24,24 @@ enum WeatherError {
     }
 }
 
+
+/// App Constants
+
 struct Constants {
+    
+    /// URL Constants
     struct Path {
         static let url = "https://www.metoffice.gov.uk/climate/uk/summaries/datasets"
     }
     
+    
+    /// Segue Constants
     struct Segue {
         static let detailIdentifier = "weatherSegue"
     }
     
+    
+    /// Error Message
     struct Message {
         struct ErrorMessage {
             static let somethingWentWrong = "OOPS!!! Something went wrong."
@@ -41,7 +54,15 @@ struct Constants {
     }
 }
 
+
+/// Responsible for constant Parameter
 struct Params {
+    
+    
+    /// Responsible for get month
+    ///
+    /// - Parameter index: index of month should be in range 1...12
+    /// - Returns: Returns a month depending on index
     static func getMonth(index: Int) -> String {
         switch index {
         case 1:
@@ -73,6 +94,11 @@ struct Params {
         }
     }
     
+    
+    /// Responsible for get Region Code
+    ///
+    /// - Parameter index: index of region code should be in range 0...3
+    /// - Returns: Returns a region code depending on index
     static func getRegionCode(index:Int) -> String {
         switch index {
         case 0:
@@ -88,6 +114,11 @@ struct Params {
         }
     }
     
+    
+    /// Rsponsible for getting the weather param
+    ///
+    /// - Parameter index: index of weather param should be in range 0...3
+    /// - Returns: index of weather param should be in range 0...4
     static func getWeatherParam(index:Int) -> String {
         switch index {
         case 0:
@@ -107,11 +138,17 @@ struct Params {
 }
 
 
+
+/// Protocol for alert
+
 protocol Aletable {}
 
 
 extension Aletable where Self: UIViewController {
-        
+    
+    /// Responsible for showing an alert controller
+    ///
+    /// - Parameter message: alert message
     func showAlert(_ message: String) {
         let alertController = UIAlertController(title: title, message: "Weather", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -122,6 +159,8 @@ extension Aletable where Self: UIViewController {
         }
     }
     
+    
+    /// Responsible for showing loading view
     func showSpinner() {
         let alertController = UIAlertController(title: nil, message: "Loading \n\n", preferredStyle: .alert)
         
@@ -142,6 +181,8 @@ extension Aletable where Self: UIViewController {
         }
     }
     
+    
+    /// Responsible for dissmiss a loading view
     func dissmissSpinner() {
         if let presentedViewController = self.presentedViewController {
             if presentedViewController.isKind(of: UIAlertController.self) {
@@ -154,6 +195,10 @@ extension Aletable where Self: UIViewController {
 
 
 extension String {
+    
+    /// Responsible for removing multiple spaces between word's
+    ///
+    /// - Returns: String with containing single space between word's
     func condenseWhitespace() -> String {
         let components = self.components(separatedBy:NSCharacterSet.whitespacesAndNewlines)
         return components.filter { !$0.isEmpty }.joined(separator: " ")
