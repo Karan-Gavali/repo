@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12E52B2F31324E8CA9AB1965 /* Pods_Assignment_Karan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFE31380D0EC9AC055DF359 /* Pods_Assignment_Karan_iOS.framework */; };
+		7B98E8651FD28CFD0053BCEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E8641FD28CFD0053BCEB /* AppDelegate.swift */; };
+		7B98E86A1FD28CFD0053BCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B98E8681FD28CFD0053BCEB /* Main.storyboard */; };
+		7B98E86C1FD28CFD0053BCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B98E86B1FD28CFD0053BCEB /* Assets.xcassets */; };
+		7B98E86F1FD28CFD0053BCEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B98E86D1FD28CFD0053BCEB /* LaunchScreen.storyboard */; };
+		7B98E8801FD28E490053BCEB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E87F1FD28E490053BCEB /* ApiManager.swift */; };
+		7B98E8821FD28E950053BCEB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E8811FD28E950053BCEB /* HomeViewController.swift */; };
+		7B98E8841FD290F60053BCEB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E8831FD290F60053BCEB /* Utils.swift */; };
+		7B98E8871FD2B3B50053BCEB /* Tempreture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E8861FD2B3B50053BCEB /* Tempreture.swift */; };
+		7B98E88A1FD2B4610053BCEB /* Territory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E8891FD2B4610053BCEB /* Territory.swift */; };
+		7B98E88D1FD2D6310053BCEB /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E88C1FD2D6310053BCEB /* Weather.swift */; };
+		7B98E8951FD3077C0053BCEB /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E8941FD3077C0053BCEB /* DownloadOperation.swift */; };
+		7BCA34EB1FD596390000F2BC /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA34EA1FD596390000F2BC /* HomeTableViewCell.swift */; };
+		7BCA34F01FD597410000F2BC /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA34EF1FD597410000F2BC /* DetailTableViewCell.swift */; };
+		7BCA34F21FD597570000F2BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA34F11FD597570000F2BC /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51EAD99658C834251EAC1847 /* Pods-Assignment-Karan-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-Karan-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment-Karan-iOS/Pods-Assignment-Karan-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6B6EEED0BFFC15E51001696E /* Pods-Assignment-Karan-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-Karan-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment-Karan-iOS/Pods-Assignment-Karan-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7B98E8611FD28CFD0053BCEB /* Assignment-Karan-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment-Karan-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B98E8641FD28CFD0053BCEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		7B98E8691FD28CFD0053BCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B98E86B1FD28CFD0053BCEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		7B98E86E1FD28CFD0053BCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B98E8701FD28CFD0053BCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		7B98E87F1FD28E490053BCEB /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiManager.swift; path = ../ApiManager.swift; sourceTree = "<group>"; };
+		7B98E8811FD28E950053BCEB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7B98E8831FD290F60053BCEB /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = "Assignment-Karan-iOS/Utils/Utils.swift"; sourceTree = SOURCE_ROOT; };
+		7B98E8861FD2B3B50053BCEB /* Tempreture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tempreture.swift; sourceTree = "<group>"; };
+		7B98E8891FD2B4610053BCEB /* Territory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Territory.swift; sourceTree = "<group>"; };
+		7B98E88C1FD2D6310053BCEB /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		7B98E8941FD3077C0053BCEB /* DownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
+		7BCA34EA1FD596390000F2BC /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewCell.swift; path = "Assignment-Karan-iOS/View/Cell/HomeTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		7BCA34EF1FD597410000F2BC /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		7BCA34F11FD597570000F2BC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9AFE31380D0EC9AC055DF359 /* Pods_Assignment_Karan_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Karan_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B98E85E1FD28CFD0053BCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E52B2F31324E8CA9AB1965 /* Pods_Assignment_Karan_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28E9E95478AC72026F58CE21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6EEED0BFFC15E51001696E /* Pods-Assignment-Karan-iOS.debug.xcconfig */,
+				51EAD99658C834251EAC1847 /* Pods-Assignment-Karan-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B98E8581FD28CFD0053BCEB = {
+			isa = PBXGroup;
+			children = (
+				7B98E8631FD28CFD0053BCEB /* Assignment-Karan-iOS */,
+				7B98E8621FD28CFD0053BCEB /* Products */,
+				28E9E95478AC72026F58CE21 /* Pods */,
+				F0B837EF58562F6F9D189012 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B98E8621FD28CFD0053BCEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8611FD28CFD0053BCEB /* Assignment-Karan-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B98E8631FD28CFD0053BCEB /* Assignment-Karan-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E88B1FD2D5E10053BCEB /* ViewModel */,
+				7B98E87E1FD28E130053BCEB /* ApiManager */,
+				7B98E87A1FD28D870053BCEB /* Utils */,
+				7B98E8791FD28D7A0053BCEB /* Model */,
+				7B98E8781FD28D730053BCEB /* View */,
+				7B98E8771FD28D6D0053BCEB /* Controller */,
+				7B98E8761FD28D5E0053BCEB /* AppExtension */,
+			);
+			path = "Assignment-Karan-iOS";
+			sourceTree = "<group>";
+		};
+		7B98E8761FD28D5E0053BCEB /* AppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8641FD28CFD0053BCEB /* AppDelegate.swift */,
+				7B98E86B1FD28CFD0053BCEB /* Assets.xcassets */,
+				7B98E8701FD28CFD0053BCEB /* Info.plist */,
+			);
+			path = AppExtension;
+			sourceTree = "<group>";
+		};
+		7B98E8771FD28D6D0053BCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA34EC1FD597260000F2BC /* Detail */,
+				7B98E87D1FD28DB90053BCEB /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B98E8781FD28D730053BCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E87C1FD28DB00053BCEB /* Cell */,
+				7B98E87B1FD28DAA0053BCEB /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B98E8791FD28D7A0053BCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8881FD2B4580053BCEB /* Territory */,
+				7B98E8851FD2B3A90053BCEB /* Tempreture */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B98E87A1FD28D870053BCEB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA34F91FD5B4AD0000F2BC /* Utils */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7B98E87B1FD28DAA0053BCEB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8681FD28CFD0053BCEB /* Main.storyboard */,
+				7B98E86D1FD28CFD0053BCEB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7B98E87C1FD28DB00053BCEB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA34EE1FD597360000F2BC /* Detail */,
+				7BCA34ED1FD5972C0000F2BC /* Home */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7B98E87D1FD28DB90053BCEB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8811FD28E950053BCEB /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B98E87E1FD28E130053BCEB /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8931FD3076D0053BCEB /* Operation */,
+				7B98E8921FD307620053BCEB /* ApiHandler */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		7B98E8851FD2B3A90053BCEB /* Tempreture */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8861FD2B3B50053BCEB /* Tempreture.swift */,
+			);
+			path = Tempreture;
+			sourceTree = "<group>";
+		};
+		7B98E8881FD2B4580053BCEB /* Territory */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8891FD2B4610053BCEB /* Territory.swift */,
+			);
+			path = Territory;
+			sourceTree = "<group>";
+		};
+		7B98E88B1FD2D5E10053BCEB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E88C1FD2D6310053BCEB /* Weather.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7B98E8921FD307620053BCEB /* ApiHandler */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E87F1FD28E490053BCEB /* ApiManager.swift */,
+			);
+			path = ApiHandler;
+			sourceTree = "<group>";
+		};
+		7B98E8931FD3076D0053BCEB /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8941FD3077C0053BCEB /* DownloadOperation.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		7BCA34EC1FD597260000F2BC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA34F11FD597570000F2BC /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7BCA34ED1FD5972C0000F2BC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA34EA1FD596390000F2BC /* HomeTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7BCA34EE1FD597360000F2BC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA34EF1FD597410000F2BC /* DetailTableViewCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7BCA34F91FD5B4AD0000F2BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E8831FD290F60053BCEB /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F0B837EF58562F6F9D189012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE31380D0EC9AC055DF359 /* Pods_Assignment_Karan_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B98E8601FD28CFD0053BCEB /* Assignment-Karan-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B98E8731FD28CFD0053BCEB /* Build configuration list for PBXNativeTarget "Assignment-Karan-iOS" */;
+			buildPhases = (
+				C88D68009680A257B550F98D /* [CP] Check Pods Manifest.lock */,
+				7B98E85D1FD28CFD0053BCEB /* Sources */,
+				7B98E85E1FD28CFD0053BCEB /* Frameworks */,
+				7B98E85F1FD28CFD0053BCEB /* Resources */,
+				9B85451607ACCF804D0763E2 /* [CP] Embed Pods Frameworks */,
+				E05283083FF9FF9D0BEC87D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment-Karan-iOS";
+			productName = "Assignment-Karan-iOS";
+			productReference = 7B98E8611FD28CFD0053BCEB /* Assignment-Karan-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B98E8591FD28CFD0053BCEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Karan Gavali";
+				TargetAttributes = {
+					7B98E8601FD28CFD0053BCEB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 7B98E85C1FD28CFD0053BCEB /* Build configuration list for PBXProject "Assignment-Karan-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B98E8581FD28CFD0053BCEB;
+			productRefGroup = 7B98E8621FD28CFD0053BCEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B98E8601FD28CFD0053BCEB /* Assignment-Karan-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B98E85F1FD28CFD0053BCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B98E86F1FD28CFD0053BCEB /* LaunchScreen.storyboard in Resources */,
+				7B98E86C1FD28CFD0053BCEB /* Assets.xcassets in Resources */,
+				7B98E86A1FD28CFD0053BCEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B85451607ACCF804D0763E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Assignment-Karan-iOS/Pods-Assignment-Karan-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C88D68009680A257B550F98D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E05283083FF9FF9D0BEC87D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Assignment-Karan-iOS/Pods-Assignment-Karan-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B98E85D1FD28CFD0053BCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCA34F21FD597570000F2BC /* DetailViewController.swift in Sources */,
+				7B98E8801FD28E490053BCEB /* ApiManager.swift in Sources */,
+				7B98E8651FD28CFD0053BCEB /* AppDelegate.swift in Sources */,
+				7B98E8821FD28E950053BCEB /* HomeViewController.swift in Sources */,
+				7B98E8951FD3077C0053BCEB /* DownloadOperation.swift in Sources */,
+				7B98E8841FD290F60053BCEB /* Utils.swift in Sources */,
+				7B98E88A1FD2B4610053BCEB /* Territory.swift in Sources */,
+				7BCA34EB1FD596390000F2BC /* HomeTableViewCell.swift in Sources */,
+				7B98E8871FD2B3B50053BCEB /* Tempreture.swift in Sources */,
+				7BCA34F01FD597410000F2BC /* DetailTableViewCell.swift in Sources */,
+				7B98E88D1FD2D6310053BCEB /* Weather.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B98E8681FD28CFD0053BCEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B98E8691FD28CFD0053BCEB /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7B98E86D1FD28CFD0053BCEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B98E86E1FD28CFD0053BCEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B98E8711FD28CFD0053BCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B98E8721FD28CFD0053BCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B98E8741FD28CFD0053BCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6EEED0BFFC15E51001696E /* Pods-Assignment-Karan-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Assignment-Karan-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudorealm.assignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7B98E8751FD28CFD0053BCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EAD99658C834251EAC1847 /* Pods-Assignment-Karan-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Assignment-Karan-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudorealm.assignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B98E85C1FD28CFD0053BCEB /* Build configuration list for PBXProject "Assignment-Karan-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B98E8711FD28CFD0053BCEB /* Debug */,
+				7B98E8721FD28CFD0053BCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B98E8731FD28CFD0053BCEB /* Build configuration list for PBXNativeTarget "Assignment-Karan-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B98E8741FD28CFD0053BCEB /* Debug */,
+				7B98E8751FD28CFD0053BCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B98E8591FD28CFD0053BCEB /* Project object */;
+}

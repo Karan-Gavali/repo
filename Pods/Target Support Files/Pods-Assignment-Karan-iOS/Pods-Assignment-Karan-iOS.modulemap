@@ -1,0 +1,6 @@
+framework module Pods_Assignment_Karan_iOS {
+  umbrella header "Pods-Assignment-Karan-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
